@@ -1,3 +1,9 @@
-function scrollToAbout() {
-  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+function scrollToSection() {
+
+  document
+    .getElementById("about")
+    .scrollIntoView({
+      behavior: "smooth"
+    });
+
 }
