@@ -6,12 +6,13 @@ body {
   scroll-behavior: smooth;
 }
 
-/* NAV */
+/* NAVBAR */
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 15px 30px;
+  align-items: center;
   background: #111827;
+  padding: 15px 30px;
   position: sticky;
   top: 0;
 }
@@ -19,10 +20,11 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin-left: 15px;
 }
 
 nav a {
@@ -37,12 +39,23 @@ nav a {
   background: linear-gradient(135deg, #2563eb, #1e3a8a);
 }
 
+/* PROFILE IMAGE */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
 button {
   padding: 10px 20px;
   border: none;
   background: black;
   color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 /* SECTIONS */
@@ -51,6 +64,7 @@ section {
   text-align: center;
 }
 
+/* SKILLS */
 .grid {
   display: flex;
   justify-content: center;
@@ -61,20 +75,20 @@ section {
   background: #1e293b;
   padding: 15px;
   border-radius: 8px;
-  transition: 0.3s;
 }
 
-.grid div:hover {
-  transform: scale(1.1);
-  background: #2563eb;
-}
-
+/* PROJECT CARD */
 .card {
   background: #1e293b;
-  padding: 20px;
   width: 250px;
   margin: auto;
+  padding: 20px;
   border-radius: 10px;
+}
+
+/* CONTACT LINK */
+a {
+  color: #60a5fa;
 }
 
 /* FOOTER */
@@ -83,7 +97,7 @@ footer {
   padding: 10px;
 }
 
-/* 📱 RESPONSIVE */
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
   nav {
@@ -93,15 +107,10 @@ footer {
 
   nav ul {
     flex-direction: column;
-    padding: 0;
   }
 
   nav ul li {
     margin: 10px 0;
-  }
-
-  .hero {
-    padding: 50px 10px;
   }
 
   .grid {
