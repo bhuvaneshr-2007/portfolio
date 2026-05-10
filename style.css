@@ -1,17 +1,55 @@
-#projects{
-  padding:40px;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#f4f4f4;
+  color:#333;
+  line-height:1.6;
+}
+
+header{
+  background:#007bff;
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.profile{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+}
+
+section{
+  padding:40px 20px;
   text-align:center;
 }
 
+ul{
+  list-style:none;
+}
+
+ul li{
+  margin:10px 0;
+}
+
 .project-card{
-  background:#f4f4f4;
+  background:white;
   padding:20px;
   margin:20px auto;
   width:300px;
   border-radius:10px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
 
-.project-card a{
+.project-card a,
+#contact a{
   display:inline-block;
   margin-top:10px;
   text-decoration:none;
@@ -19,4 +57,9 @@
   color:white;
   padding:10px 15px;
   border-radius:5px;
+}
+
+.project-card a:hover,
+#contact a:hover{
+  background:#0056b3;
 }
