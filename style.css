@@ -1,124 +1,22 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #0f172a;
-  color: white;
-  scroll-behavior: smooth;
+#projects{
+  padding:40px;
+  text-align:center;
 }
 
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111827;
-  padding: 15px 30px;
-  position: sticky;
-  top: 0;
+.project-card{
+  background:#f4f4f4;
+  padding:20px;
+  margin:20px auto;
+  width:300px;
+  border-radius:10px;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  margin-left: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #2563eb, #1e3a8a);
-}
-
-/* PROFILE IMAGE */
-.profile-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid white;
-  margin-bottom: 15px;
-}
-
-/* BUTTON */
-button {
-  padding: 10px 20px;
-  border: none;
-  background: black;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* SECTIONS */
-section {
-  padding: 50px;
-  text-align: center;
-}
-
-/* SKILLS */
-.grid {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.grid div {
-  background: #1e293b;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-/* PROJECT CARD */
-.card {
-  background: #1e293b;
-  width: 250px;
-  margin: auto;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* CONTACT LINK */
-a {
-  color: #60a5fa;
-}
-
-/* FOOTER */
-footer {
-  background: #111827;
-  padding: 10px;
-}
-
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-
-  nav {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  section {
-    padding: 20px;
-  }
+.project-card a{
+  display:inline-block;
+  margin-top:10px;
+  text-decoration:none;
+  background:#007bff;
+  color:white;
+  padding:10px 15px;
+  border-radius:5px;
 }
